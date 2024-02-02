@@ -7,6 +7,8 @@ import {
   UploadStreamDescriptorType,
 } from "@medusajs/types";
 import { StorageClient } from "@supabase/storage-js";
+import { randomUUID } from "crypto";
+import { createReadStream } from "fs";
 
 class SupabaseFileService extends AbstractFileService {
   logger: Logger;
@@ -15,12 +17,12 @@ class SupabaseFileService extends AbstractFileService {
   signedUrlExpiration = 120;
 
   constructor(
-    container: MedusaContainer,
+    container: any,
     { serviceKey, bucketName, referenceID }: Record<string, unknown>
   ) {
     super(container);
 
-    this.logger = container.cradle.logger;
+    this.logger = container.logger as Logger;
     this.bucket = bucketName as string;
     this.storageClient = new StorageClient(
       `https://${referenceID}.supabase.co/storage/v1`,
@@ -36,7 +38,11 @@ class SupabaseFileService extends AbstractFileService {
   ): Promise<FileServiceUploadResult> {
     const { data, error } = await this.storageClient
       .from(this.bucket)
-      .upload("assets", fileData.stream);
+      .upload(
+        `assets/${randomUUID()}.${fileData.originalname.split(".").pop()}`,
+        createReadStream(fileData.path),
+        { contentType: fileData.mimetype, duplex: 'half' }
+      );
 
     if (error) {
       this.logger.error(error);
@@ -63,7 +69,11 @@ class SupabaseFileService extends AbstractFileService {
   ): Promise<FileServiceUploadResult> {
     const { data, error } = await this.storageClient
       .from(this.bucket)
-      .upload("assets", fileData.stream);
+      .upload(
+        `private/${randomUUID()}.${fileData.originalname.split(".").pop()}`,
+        createReadStream(fileData.path),
+        { contentType: fileData.mimetype, duplex: 'half', }
+      );
 
     if (error) {
       this.logger.error(error);
