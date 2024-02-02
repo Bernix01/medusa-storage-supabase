@@ -15,7 +15,9 @@ build
 .cache
 .yarn
 uploads
-
+tsconfig.**
+.vscode
+.github
 # These are files that are included in a
 # Medusa project and can be removed from a
 # plugin project
