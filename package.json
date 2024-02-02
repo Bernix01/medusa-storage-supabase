@@ -1,6 +1,6 @@
 {
   "name": "medusa-storage-supabase",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A plugin to store files in supabase.",
   "author": "bernix01 <gbernal096@gmail.com>",
   "license": "MIT",

@@ -25,11 +25,14 @@ class SupabaseFileService extends AbstractFileService {
 
     this.logger = container.logger as Logger;
     this.bucket = bucketName as string;
-    this.storageUrl = `https://${referenceID}.supabase.co/storage/v1`;
-    this.storageClient = new StorageClient(this.storageUrl, {
-      apikey: serviceKey as string,
-      Authorization: `Bearer ${serviceKey as string}`,
-    });
+    this.storageUrl = `https://${referenceID}.supabase.co/storage/v1/object/public`;
+    this.storageClient = new StorageClient(
+      `https://${referenceID}.supabase.co/storage/v1`,
+      {
+        apikey: serviceKey as string,
+        Authorization: `Bearer ${serviceKey as string}`,
+      }
+    );
   }
 
   async upload(
