@@ -7,21 +7,21 @@
   "keywords": [
     "storage",
     "plugin",
+    "medusa-plugin",
+    "medusa-plugin-storage",
     "typescript",
     "supabase",
     "medusa"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bernix01/medusa-storage-supabase/tree/main"
+  },
   "scripts": {
     "clean": "cross-env ./node_modules/.bin/rimraf dist",
-    "build": "cross-env npm run clean && npm run build:server && npm run build:admin",
-    "build:server": "cross-env npm run clean && tsc -p tsconfig.server.json",
-    "build:admin": "cross-env medusa-admin build",
-    "watch": "cross-env tsc --watch",
-    "test": "cross-env jest",
-    "seed": "cross-env medusa seed -f ./data/seed.json",
-    "start": "cross-env npm run build && medusa start",
-    "start:custom": "cross-env npm run build && node --preserve-symlinks --trace-warnings index.js",
-    "dev": "cross-env npm run build:server && medusa develop"
+    "build": "cross-env npm run clean && tsc -p tsconfig.server.json",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "test": "cross-env jest"
   },
   "peerDependencies": {
     "@medusajs/medusa": "^1.20.1"
