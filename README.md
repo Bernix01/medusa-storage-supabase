@@ -17,7 +17,7 @@ Handle file uploads with supabase
 - [Node.js v17 or greater](https://nodejs.org/en)
 - [A Medusa backend](https://docs.medusajs.com/development/backend/install)
 - [Supabase account](https://supabase.com/)
-- Supabase storage bucket. **Do not set it to public** as this plugin handles signed urls.
+- Supabase storage bucket. **Set it to public** as this plugin handles signed urls but some files need to be public :).
 
 ---
 
