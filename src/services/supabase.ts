@@ -15,6 +15,7 @@ class SupabaseFileService extends AbstractFileService {
   storageClient: StorageClient;
   bucket: string;
   signedUrlExpiration = 120;
+  storageUrl: string;
 
   constructor(
     container: any,
@@ -24,13 +25,11 @@ class SupabaseFileService extends AbstractFileService {
 
     this.logger = container.logger as Logger;
     this.bucket = bucketName as string;
-    this.storageClient = new StorageClient(
-      `https://${referenceID}.supabase.co/storage/v1`,
-      {
-        apikey: serviceKey as string,
-        Authorization: `Bearer ${serviceKey as string}`,
-      }
-    );
+    this.storageUrl = `https://${referenceID}.supabase.co/storage/v1`;
+    this.storageClient = new StorageClient(this.storageUrl, {
+      apikey: serviceKey as string,
+      Authorization: `Bearer ${serviceKey as string}`,
+    });
   }
 
   async upload(
@@ -41,7 +40,7 @@ class SupabaseFileService extends AbstractFileService {
       .upload(
         `assets/${randomUUID()}.${fileData.originalname.split(".").pop()}`,
         createReadStream(fileData.path),
-        { contentType: fileData.mimetype, duplex: 'half' }
+        { contentType: fileData.mimetype, duplex: "half" }
       );
 
     if (error) {
@@ -49,18 +48,9 @@ class SupabaseFileService extends AbstractFileService {
       throw new Error("Error uploading file");
     }
 
-    const signedURLResult = await this.storageClient
-      .from(this.bucket)
-      .createSignedUrl(data.path, this.signedUrlExpiration);
-
-    if (signedURLResult.error) {
-      this.logger.error(signedURLResult.error);
-      throw new Error("Error getting presigned url");
-    }
-
     return {
       key: data.path,
-      url: signedURLResult.data.signedUrl,
+      url: `${this.storageUrl}/${this.bucket}/${data.path}`,
     };
   }
 
@@ -72,7 +62,7 @@ class SupabaseFileService extends AbstractFileService {
       .upload(
         `private/${randomUUID()}.${fileData.originalname.split(".").pop()}`,
         createReadStream(fileData.path),
-        { contentType: fileData.mimetype, duplex: 'half', }
+        { contentType: fileData.mimetype, duplex: "half" }
       );
 
     if (error) {
@@ -133,7 +123,7 @@ class SupabaseFileService extends AbstractFileService {
     const { data, error } = await this.storageClient
       .from(this.bucket)
       .createSignedUrl(fileData.fileKey, this.signedUrlExpiration);
-
+    this.logger.info(fileData);
     if (error) {
       this.logger.error(error);
       throw new Error("Error getting presigned url");
