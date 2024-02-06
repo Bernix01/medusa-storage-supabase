@@ -20,11 +20,11 @@ class SupabaseFileService extends AbstractFileService {
   constructor(container: any, config: Record<string, unknown> | undefined) {
     super(container);
     const bucket: string =
-      (config.bucketName as string) || process.env.BUCKET_NAME;
+      (config?.bucketName as string) || process.env.BUCKET_NAME;
     const referenceID: string =
-      (config.referenceID as string) || process.env.STORAGE_BUCKET_REF;
+      (config?.referenceID as string) || process.env.STORAGE_BUCKET_REF;
     const serviceKey: string =
-      (config.serviceKey as string) || process.env.STORAGE_SERVICE_KEY;
+      (config?.serviceKey as string) || process.env.STORAGE_SERVICE_KEY;
     this.logger = container.logger as Logger;
     this.bucket = bucket;
     this.storageUrl = `https://${referenceID}.supabase.co/storage/v1/object/public`;
