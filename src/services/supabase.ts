@@ -9,6 +9,7 @@ import {
 import { StorageClient } from "@supabase/storage-js";
 import { randomUUID } from "crypto";
 import { createReadStream } from "fs";
+import { PassThrough } from "stream";
 
 class SupabaseFileService extends AbstractFileService {
   logger: Logger;
@@ -104,7 +105,22 @@ class SupabaseFileService extends AbstractFileService {
   async getUploadStreamDescriptor(
     fileData: UploadStreamDescriptorType
   ): Promise<FileServiceGetUploadStreamResult> {
-    throw new Error("Method not implemented.");
+    const pass = new PassThrough();
+    const key = fileData.isPrivate
+      ? `private/${randomUUID()}.${fileData.ext}`
+      : `public/${randomUUID()}.${fileData.ext}`;
+
+    const promise = this.storageClient.from(this.bucket).upload(key, pass, {
+      contentType: fileData.contentType as string,
+      duplex: "half",
+    });
+
+    return {
+      writeStream: pass,
+      promise,
+      url: `${this.storageUrl}/${this.bucket}/${key}`,
+      fileKey: key,
+    };
   }
 
   async getDownloadStream(
