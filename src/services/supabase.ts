@@ -1,4 +1,4 @@
-import { AbstractFileService, Logger, MedusaContainer } from "@medusajs/medusa";
+import { AbstractFileService, Logger } from "@medusajs/medusa";
 import {
   DeleteFileType,
   FileServiceGetUploadStreamResult,
