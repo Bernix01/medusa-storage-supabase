@@ -1911,7 +1911,7 @@
   dependencies:
     "@lukeed/csprng" "^1.1.0"
 
-"@medusajs/admin-ui@^2.1.11":
+"@medusajs/admin-ui@^2.1.12":
   version "2.1.12"
   resolved "https://registry.yarnpkg.com/@medusajs/admin-ui/-/admin-ui-2.1.12.tgz#0b3886a7bb13cef069d7daf1f930051f42ece481"
   integrity sha512-IFZeXgvFp0fbkf/XD6+ji3tpUH8uhzE+KOwqCfYx5Is7yGWSNYS+BDLVv9R2W9/CyxNV7oRhJ0ee/fn4nJIJiA==
@@ -1999,12 +1999,12 @@
     webpackbar "^5.0.2"
     zod "^3.22.2"
 
-"@medusajs/admin@7.1.10":
-  version "7.1.10"
-  resolved "https://registry.yarnpkg.com/@medusajs/admin/-/admin-7.1.10.tgz#565ee687b1adca50ffaf135e8a6d2a024bc12823"
-  integrity sha512-yKm0G4T5rk90noY7911Xmlg4NdGaLZFPRbMCH+vF5OeELFwjbesuAROuWkL/1AFMcrcE/nsXmi7g4mKmv1AZmQ==
+"@medusajs/admin@7.1.11":
+  version "7.1.11"
+  resolved "https://registry.yarnpkg.com/@medusajs/admin/-/admin-7.1.11.tgz#7f1013b08332391f4a7ade5257ee889c7fab3de8"
+  integrity sha512-00x9BMeZMmQyRZ/X8ZYB/SwObVfkMQtrWqPJH/Kl4kvWhnCIfeSF51P2ZA5nNv7V7DmAOEngWVytKgNhPwF6bA==
   dependencies:
-    "@medusajs/admin-ui" "^2.1.11"
+    "@medusajs/admin-ui" "^2.1.12"
     "@rollup/plugin-alias" "5.0.0"
     "@rollup/plugin-commonjs" "24.1.0"
     "@rollup/plugin-json" "6.0.0"
