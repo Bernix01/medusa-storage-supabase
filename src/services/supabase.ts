@@ -9,14 +9,15 @@ import {
 import { StorageClient } from "@supabase/storage-js";
 import { randomUUID } from "crypto";
 import { createReadStream } from "fs";
-import { PassThrough } from "stream";
+import { PassThrough, Readable } from "stream";
+import fetch from "cross-fetch";
 
 class SupabaseFileService extends AbstractFileService {
-  logger: Logger;
-  storageClient: StorageClient;
-  bucket: string;
-  signedUrlExpiration = 120;
-  storageUrl: string;
+  protected readonly logger: Logger;
+  protected readonly storageClient: StorageClient;
+  protected readonly bucket: string;
+  protected readonly signedUrlExpiration = 120;
+  protected readonly storageUrl: string;
 
   constructor(container: any, config: Record<string, unknown> | undefined) {
     super(container);
@@ -34,7 +35,8 @@ class SupabaseFileService extends AbstractFileService {
       {
         apikey: serviceKey,
         Authorization: `Bearer ${serviceKey}`,
-      }
+      },
+      fetch
     );
   }
 
@@ -131,10 +133,9 @@ class SupabaseFileService extends AbstractFileService {
       .download(fileData.fileKey);
 
     if (error) {
-      this.logger.error(error);
+      this.logger.error("ERROR GETTING file", error);
       throw new Error("Error getting download stream");
     }
-
     return data.stream();
   }
 
