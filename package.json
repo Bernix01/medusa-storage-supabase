@@ -27,7 +27,7 @@
     "@medusajs/medusa": "^1.20.2"
   },
   "dependencies": {
-    "@medusajs/admin": "7.1.11",
+    "@medusajs/admin": "7.1.12",
     "@supabase/storage-js": "^2.5.5",
     "@types/multer": "^1.4.11",
     "cross-fetch": "^4.0.0"

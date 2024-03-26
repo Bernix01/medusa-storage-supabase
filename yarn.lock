@@ -1923,18 +1923,18 @@
   dependencies:
     "@lukeed/csprng" "^1.1.0"
 
-"@medusajs/admin-ui@^2.1.12":
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/@medusajs/admin-ui/-/admin-ui-2.1.12.tgz#0b3886a7bb13cef069d7daf1f930051f42ece481"
-  integrity sha512-IFZeXgvFp0fbkf/XD6+ji3tpUH8uhzE+KOwqCfYx5Is7yGWSNYS+BDLVv9R2W9/CyxNV7oRhJ0ee/fn4nJIJiA==
+"@medusajs/admin-ui@^2.1.13":
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/@medusajs/admin-ui/-/admin-ui-2.1.13.tgz#18840a831fb9358771b3fe0fed5509905ca027dc"
+  integrity sha512-rygwx/UZdKTHyYZNiloa401kyswOGu57lGqCPV4E7SpC7uT/e5Aq9Q+zxeGlaBAH5MR34etKIjwPnvdArgEIDg==
   dependencies:
     "@babel/parser" "7.22.5"
     "@babel/traverse" "7.22.5"
     "@hookform/error-message" "^2.0.1"
     "@hookform/resolvers" "^3.3.1"
     "@medusajs/icons" "^1.1.0"
-    "@medusajs/ui" "^2.4.0"
-    "@medusajs/ui-preset" "^1.1.1"
+    "@medusajs/ui" "^2.4.3"
+    "@medusajs/ui-preset" "^1.1.3"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.10"
     "@radix-ui/react-accordion" "^1.0.1"
     "@radix-ui/react-avatar" "^1.0.1"
@@ -2011,12 +2011,12 @@
     webpackbar "^5.0.2"
     zod "^3.22.2"
 
-"@medusajs/admin@7.1.11":
-  version "7.1.11"
-  resolved "https://registry.yarnpkg.com/@medusajs/admin/-/admin-7.1.11.tgz#7f1013b08332391f4a7ade5257ee889c7fab3de8"
-  integrity sha512-00x9BMeZMmQyRZ/X8ZYB/SwObVfkMQtrWqPJH/Kl4kvWhnCIfeSF51P2ZA5nNv7V7DmAOEngWVytKgNhPwF6bA==
+"@medusajs/admin@7.1.12":
+  version "7.1.12"
+  resolved "https://registry.yarnpkg.com/@medusajs/admin/-/admin-7.1.12.tgz#6b9080259f85a5b07c6b23fe6915abcb5cb0c7d5"
+  integrity sha512-TqA+lfKjwJo0UOHu1kM3gnUIu9eDaIX8IDz0dl3qHJHSvnhV+aop5BQxgOdkZO/VuLnRlVebr+7fDsmEBvj89A==
   dependencies:
-    "@medusajs/admin-ui" "^2.1.12"
+    "@medusajs/admin-ui" "^2.1.13"
     "@rollup/plugin-alias" "5.0.0"
     "@rollup/plugin-commonjs" "24.1.0"
     "@rollup/plugin-json" "6.0.0"
@@ -2024,7 +2024,7 @@
     "@rollup/plugin-replace" "5.0.2"
     "@rollup/plugin-virtual" "^3.0.1"
     commander "^10.0.0"
-    dotenv "16.3.1"
+    dotenv "^16.4.5"
     esbuild "0.17.18"
     express "4.18.2"
     fs-extra "11.1.0"
@@ -2046,10 +2046,15 @@
     awilix "^8.0.1"
     ulid "^2.3.0"
 
-"@medusajs/icons@^1.1.0", "@medusajs/icons@^1.2.0":
+"@medusajs/icons@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@medusajs/icons/-/icons-1.2.0.tgz#0ccc10e07f7dd9dad6d12e3153c7aa2588fe5882"
   integrity sha512-kjPfB3gN9aNXlSI3Xpa4HDUpyeMZSc6aOFgP1ZLv+hBNjETH2k+CpDj3rkpfYcjtuxfVxWdtGzPXx8A8UQGsMw==
+
+"@medusajs/icons@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@medusajs/icons/-/icons-1.2.1.tgz#0ba1115455b81c12050fdcbb7e66c9d4f11966ae"
+  integrity sha512-jlV2uWn+kHhYqfNUA0m2xx7Gck/+YKYhLruaQhTSmVifjFk3SUNzC3bFMPoYvLvCKg5vbxq7SCur5hDgrKkW+w==
 
 "@medusajs/link-modules@^0.2.8":
   version "0.2.8"
@@ -2196,20 +2201,20 @@
   resolved "https://registry.yarnpkg.com/@medusajs/types/-/types-1.11.13.tgz#65b2a3f970fb652e719b5733139152e2e30ef957"
   integrity sha512-y8NM4G/rIrZxtt5rJmRCaFQ33BOIuPPh4MXdo6e3fHyEa8mN9NSo1IWydkV470WyqfJ2Z43QbW8v05jfyKvJIw==
 
-"@medusajs/ui-preset@^1.1.1":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@medusajs/ui-preset/-/ui-preset-1.1.2.tgz#536c73e49f251c3aad3bf298569fcc7c2434929e"
-  integrity sha512-xiGNY0pkVM4mgibtmWFZPQPv9k6gQrNevxBDJN44cHVYXQirV0VnWsEZcOuI5w95qOLYcEAfV6Zy836ryeT1Ew==
+"@medusajs/ui-preset@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@medusajs/ui-preset/-/ui-preset-1.1.3.tgz#7a7d9bcc879952fad8f46375d73cfdf2c965f408"
+  integrity sha512-pFfZUE7EP5rH4tkzxHIH0sW5iOwUzZGP3u7519D4LIusI1MrgH5E89USjSaQXNJlh0jil4pfbh3zNWnGFn5ldg==
   dependencies:
     "@tailwindcss/forms" "^0.5.3"
     tailwindcss-animate "^1.0.6"
 
-"@medusajs/ui@^2.4.0":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@medusajs/ui/-/ui-2.4.1.tgz#3e9dd52128b88d23c0df834dca999fef7924d55f"
-  integrity sha512-dpioYi0Bm1CwMsMNF2etglk6YenKMBUd3fbhADOqfNWkFRalLmZWw0mP30+OwcF+k/QGFq2K1q3IFns2xEJMGQ==
+"@medusajs/ui@^2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@medusajs/ui/-/ui-2.4.3.tgz#dcf74889b722ea977f6bec608566a81ebfbaa462"
+  integrity sha512-7HHnWmfq6K0YmqCgGGqeZThYdAI9bi9/Y54J28W7Iy9dhCJICqeNoeUN/Xu4aE+VlfCyuKysjcU4jcpy8o4CUA==
   dependencies:
-    "@medusajs/icons" "^1.2.0"
+    "@medusajs/icons" "^1.2.1"
     "@radix-ui/react-accordion" "^1.1.2"
     "@radix-ui/react-alert-dialog" "^1.0.4"
     "@radix-ui/react-avatar" "^1.0.3"
@@ -2234,6 +2239,7 @@
     cva "1.0.0-beta.1"
     date-fns "^2.30.0"
     prism-react-renderer "^2.0.6"
+    prismjs "^1.29.0"
     react-currency-input-field "^3.6.11"
     react-day-picker "^8.8.0"
     tailwind-merge "^2.2.1"
@@ -6679,10 +6685,10 @@ dotenv@16.3.1:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
   integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
-dotenv@^16.0.3:
-  version "16.4.4"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.4.tgz#a26e7bb95ebd36272ebb56edb80b826aecf224c1"
-  integrity sha512-XvPXc8XAQThSjAbY6cQ/9PcBXmFoWuw1sQ3b8HqUCR6ziGXjkTi//kB9SWa2UwqlgdAIuRqAa/9hVljzPehbYg==
+dotenv@^16.0.3, dotenv@^16.4.5:
+  version "16.4.5"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
+  integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
 
 dset@^3.1.1, dset@^3.1.2:
   version "3.1.3"
@@ -10394,6 +10400,11 @@ prism-react-renderer@^2.0.4, prism-react-renderer@^2.0.6:
   dependencies:
     "@types/prismjs" "^1.26.0"
     clsx "^2.0.0"
+
+prismjs@^1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
