@@ -1923,18 +1923,18 @@
   dependencies:
     "@lukeed/csprng" "^1.1.0"
 
-"@medusajs/admin-ui@^2.1.12":
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/@medusajs/admin-ui/-/admin-ui-2.1.12.tgz#0b3886a7bb13cef069d7daf1f930051f42ece481"
-  integrity sha512-IFZeXgvFp0fbkf/XD6+ji3tpUH8uhzE+KOwqCfYx5Is7yGWSNYS+BDLVv9R2W9/CyxNV7oRhJ0ee/fn4nJIJiA==
+"@medusajs/admin-ui@^2.1.14":
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/@medusajs/admin-ui/-/admin-ui-2.1.14.tgz#ba0db8bb8c5ecc7c994a1cdac1396627bae9794c"
+  integrity sha512-yu0Rfo9yq3wbf5ExiwiyL6DXgZvixyKqLErw6G/K0nho94ku3OmnVgzz1NtZusTzfZTxehQJHyeU4H0FsD8jIw==
   dependencies:
     "@babel/parser" "7.22.5"
     "@babel/traverse" "7.22.5"
     "@hookform/error-message" "^2.0.1"
     "@hookform/resolvers" "^3.3.1"
     "@medusajs/icons" "^1.1.0"
-    "@medusajs/ui" "^2.4.0"
-    "@medusajs/ui-preset" "^1.1.1"
+    "@medusajs/ui" "^3.0.0"
+    "@medusajs/ui-preset" "^1.1.3"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.10"
     "@radix-ui/react-accordion" "^1.0.1"
     "@radix-ui/react-avatar" "^1.0.1"
@@ -1948,6 +1948,7 @@
     "@radix-ui/react-switch" "^1.0.1"
     "@radix-ui/react-tooltip" "^1.0.3"
     "@segment/analytics-next" "^1.51.1"
+    "@stdlib/number-float64-base-normalize" "0.0.8"
     "@svgr/webpack" "^8.0.1"
     "@swc/core" "^1.3.61"
     "@tailwindcss/forms" "^0.5.3"
@@ -1966,7 +1967,7 @@
     i18next-browser-languagedetector "^7.0.1"
     i18next-http-backend "^2.2.1"
     md5 "^2.3.0"
-    medusa-react "^9.0.13"
+    medusa-react "^9.0.17"
     mini-css-extract-plugin "^2.7.6"
     moment "^2.29.4"
     path-browserify "^1.0.1"
@@ -2011,12 +2012,12 @@
     webpackbar "^5.0.2"
     zod "^3.22.2"
 
-"@medusajs/admin@7.1.11":
-  version "7.1.11"
-  resolved "https://registry.yarnpkg.com/@medusajs/admin/-/admin-7.1.11.tgz#7f1013b08332391f4a7ade5257ee889c7fab3de8"
-  integrity sha512-00x9BMeZMmQyRZ/X8ZYB/SwObVfkMQtrWqPJH/Kl4kvWhnCIfeSF51P2ZA5nNv7V7DmAOEngWVytKgNhPwF6bA==
+"@medusajs/admin@7.1.13":
+  version "7.1.13"
+  resolved "https://registry.yarnpkg.com/@medusajs/admin/-/admin-7.1.13.tgz#ef2c0a58ad45b6010cd9e575c6241b5a2412cf0a"
+  integrity sha512-rKUe5jV0BKB+WYwKauVyuWsea8+n9H8a+CJnRiwK54L47GFM/Umxaz7eU2pVq5HDWTekyHI/xhrAsD4p8yekXA==
   dependencies:
-    "@medusajs/admin-ui" "^2.1.12"
+    "@medusajs/admin-ui" "^2.1.14"
     "@rollup/plugin-alias" "5.0.0"
     "@rollup/plugin-commonjs" "24.1.0"
     "@rollup/plugin-json" "6.0.0"
@@ -2024,12 +2025,12 @@
     "@rollup/plugin-replace" "5.0.2"
     "@rollup/plugin-virtual" "^3.0.1"
     commander "^10.0.0"
-    dotenv "16.3.1"
+    dotenv "^16.4.5"
     esbuild "0.17.18"
     express "4.18.2"
     fs-extra "11.1.0"
     lodash "^4.17.21"
-    medusa-core-utils "1.2.1"
+    medusa-core-utils "1.2.2"
     rollup "3.20.7"
     rollup-plugin-esbuild "5.0.0"
     ts-dedent "^2.2.0"
@@ -2046,10 +2047,15 @@
     awilix "^8.0.1"
     ulid "^2.3.0"
 
-"@medusajs/icons@^1.1.0", "@medusajs/icons@^1.2.0":
+"@medusajs/icons@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@medusajs/icons/-/icons-1.2.0.tgz#0ccc10e07f7dd9dad6d12e3153c7aa2588fe5882"
   integrity sha512-kjPfB3gN9aNXlSI3Xpa4HDUpyeMZSc6aOFgP1ZLv+hBNjETH2k+CpDj3rkpfYcjtuxfVxWdtGzPXx8A8UQGsMw==
+
+"@medusajs/icons@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@medusajs/icons/-/icons-1.2.1.tgz#0ba1115455b81c12050fdcbb7e66c9d4f11966ae"
+  integrity sha512-jlV2uWn+kHhYqfNUA0m2xx7Gck/+YKYhLruaQhTSmVifjFk3SUNzC3bFMPoYvLvCKg5vbxq7SCur5hDgrKkW+w==
 
 "@medusajs/link-modules@^0.2.8":
   version "0.2.8"
@@ -2196,20 +2202,20 @@
   resolved "https://registry.yarnpkg.com/@medusajs/types/-/types-1.11.13.tgz#65b2a3f970fb652e719b5733139152e2e30ef957"
   integrity sha512-y8NM4G/rIrZxtt5rJmRCaFQ33BOIuPPh4MXdo6e3fHyEa8mN9NSo1IWydkV470WyqfJ2Z43QbW8v05jfyKvJIw==
 
-"@medusajs/ui-preset@^1.1.1":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@medusajs/ui-preset/-/ui-preset-1.1.2.tgz#536c73e49f251c3aad3bf298569fcc7c2434929e"
-  integrity sha512-xiGNY0pkVM4mgibtmWFZPQPv9k6gQrNevxBDJN44cHVYXQirV0VnWsEZcOuI5w95qOLYcEAfV6Zy836ryeT1Ew==
+"@medusajs/ui-preset@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@medusajs/ui-preset/-/ui-preset-1.1.3.tgz#7a7d9bcc879952fad8f46375d73cfdf2c965f408"
+  integrity sha512-pFfZUE7EP5rH4tkzxHIH0sW5iOwUzZGP3u7519D4LIusI1MrgH5E89USjSaQXNJlh0jil4pfbh3zNWnGFn5ldg==
   dependencies:
     "@tailwindcss/forms" "^0.5.3"
     tailwindcss-animate "^1.0.6"
 
-"@medusajs/ui@^2.4.0":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@medusajs/ui/-/ui-2.4.1.tgz#3e9dd52128b88d23c0df834dca999fef7924d55f"
-  integrity sha512-dpioYi0Bm1CwMsMNF2etglk6YenKMBUd3fbhADOqfNWkFRalLmZWw0mP30+OwcF+k/QGFq2K1q3IFns2xEJMGQ==
+"@medusajs/ui@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@medusajs/ui/-/ui-3.0.0.tgz#f4378bd47a864f775c9f58d18a2c95f2d53dffba"
+  integrity sha512-27A9XQsMFVInvVZQHc0s7WBiVinwfbhHwgqhX80UKQMAvwooX4npDq9Vn2m5uR28J3q2oziToVBWiSAKo5pw1w==
   dependencies:
-    "@medusajs/icons" "^1.2.0"
+    "@medusajs/icons" "^1.2.1"
     "@radix-ui/react-accordion" "^1.1.2"
     "@radix-ui/react-alert-dialog" "^1.0.4"
     "@radix-ui/react-avatar" "^1.0.3"
@@ -2225,7 +2231,6 @@
     "@radix-ui/react-slot" "^1.0.2"
     "@radix-ui/react-switch" "^1.0.3"
     "@radix-ui/react-tabs" "^1.0.4"
-    "@radix-ui/react-toast" "^1.1.4"
     "@radix-ui/react-tooltip" "^1.0.6"
     "@react-aria/datepicker" "^3.5.0"
     "@react-stately/datepicker" "^3.5.0"
@@ -2234,8 +2239,10 @@
     cva "1.0.0-beta.1"
     date-fns "^2.30.0"
     prism-react-renderer "^2.0.6"
+    prismjs "^1.29.0"
     react-currency-input-field "^3.6.11"
     react-day-picker "^8.8.0"
+    sonner "^1.4.41"
     tailwind-merge "^2.2.1"
 
 "@medusajs/utils@^1.11.2", "@medusajs/utils@^1.11.5":
@@ -2906,25 +2913,6 @@
     "@radix-ui/react-primitive" "1.0.3"
     "@radix-ui/react-roving-focus" "1.0.4"
     "@radix-ui/react-use-controllable-state" "1.0.1"
-
-"@radix-ui/react-toast@^1.1.4":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@radix-ui/react-toast/-/react-toast-1.1.5.tgz#f5788761c0142a5ae9eb97f0051fd3c48106d9e6"
-  integrity sha512-fRLn227WHIBRSzuRzGJ8W+5YALxofH23y0MlPLddaIpLpCDqdE0NZlS2NRQDRiptfxDeeCjgFIpexB1/zkxDlw==
-  dependencies:
-    "@babel/runtime" "^7.13.10"
-    "@radix-ui/primitive" "1.0.1"
-    "@radix-ui/react-collection" "1.0.3"
-    "@radix-ui/react-compose-refs" "1.0.1"
-    "@radix-ui/react-context" "1.0.1"
-    "@radix-ui/react-dismissable-layer" "1.0.5"
-    "@radix-ui/react-portal" "1.0.4"
-    "@radix-ui/react-presence" "1.0.1"
-    "@radix-ui/react-primitive" "1.0.3"
-    "@radix-ui/react-use-callback-ref" "1.0.1"
-    "@radix-ui/react-use-controllable-state" "1.0.1"
-    "@radix-ui/react-use-layout-effect" "1.0.1"
-    "@radix-ui/react-visually-hidden" "1.0.3"
 
 "@radix-ui/react-tooltip@^1.0.3", "@radix-ui/react-tooltip@^1.0.6":
   version "1.0.7"
@@ -3969,6 +3957,18 @@
     "@stdlib/assert-is-little-endian" "^0.0.x"
     "@stdlib/number-float64-base-to-words" "^0.0.x"
     "@stdlib/utils-library-manifest" "^0.0.x"
+
+"@stdlib/number-float64-base-normalize@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@stdlib/number-float64-base-normalize/-/number-float64-base-normalize-0.0.8.tgz#981149317bd34921c653ed526376718b961e17e9"
+  integrity sha512-4P3c7YD0hahCgflxxTWrjR8457o2ViYu32MH/M166Aj6nkPj0ZovYj/X1DdyiYAAMHhVePGGMl0JAL3X141FVQ==
+  dependencies:
+    "@stdlib/constants-float64-smallest-normal" "^0.0.x"
+    "@stdlib/math-base-assert-is-infinite" "^0.0.x"
+    "@stdlib/math-base-assert-is-nan" "^0.0.x"
+    "@stdlib/math-base-special-abs" "^0.0.x"
+    "@stdlib/types" "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-property" "^0.0.x"
 
 "@stdlib/number-float64-base-normalize@^0.0.x":
   version "0.0.9"
@@ -6679,10 +6679,10 @@ dotenv@16.3.1:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
   integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
-dotenv@^16.0.3:
-  version "16.4.4"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.4.tgz#a26e7bb95ebd36272ebb56edb80b826aecf224c1"
-  integrity sha512-XvPXc8XAQThSjAbY6cQ/9PcBXmFoWuw1sQ3b8HqUCR6ziGXjkTi//kB9SWa2UwqlgdAIuRqAa/9hVljzPehbYg==
+dotenv@^16.0.3, dotenv@^16.4.5:
+  version "16.4.5"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
+  integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
 
 dset@^3.1.1, dset@^3.1.2:
   version "3.1.3"
@@ -9169,15 +9169,17 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
-medusa-core-utils@1.2.1, medusa-core-utils@^1.2.0, medusa-core-utils@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/medusa-core-utils/-/medusa-core-utils-1.2.1.tgz#c95ce78fb5e2d532b5441c11575cbf99f6138fc2"
-  integrity sha512-PBAm+5ODVcS9HREz7SH9LtiDY6/Fkwax+tqB5cTjujOiWSPuuj13ImH8eb9p6aVoOEvFtpDP4HL8TIijpJ6juw==
+medusa-core-utils@1.2.2, medusa-core-utils@^1.2.0, medusa-core-utils@^1.2.1:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/medusa-core-utils/-/medusa-core-utils-1.2.2.tgz#7f1cc6980d13a14d69ed69122588b73c6a3ca097"
+  integrity sha512-2M7bzZeEPovDZigofn5ihGhxUP4XKiovGxvEEYpfmoQAeg+kL2Vd42lIJyKRsLOKjKXqz99mmRpyUT+6gSKCCA==
+  dependencies:
+    awilix "^8.0.0"
 
-medusa-react@^9.0.13:
-  version "9.0.15"
-  resolved "https://registry.yarnpkg.com/medusa-react/-/medusa-react-9.0.15.tgz#0552c49b3944637120cf54970e7ee920fc79f350"
-  integrity sha512-oG3kcNlEElIxY/kA2iFXOalWAsh+9OHtZ+YahCSi8/TbJbV1TikiQXBsuUBnFQqJElQxzLKfRQRUIHHJaLqA4Q==
+medusa-react@^9.0.17:
+  version "9.0.17"
+  resolved "https://registry.yarnpkg.com/medusa-react/-/medusa-react-9.0.17.tgz#b66b1151d6e5fce6c362e1a2a9514505d6d652e7"
+  integrity sha512-oBDHm3xE0EcKQPflpdQyxJciu0LwmOM1Z+Z2Lw8MFsaNIpSYE+YKxBICcXRh+6C/YElXPsUebDWzrNHN8q81kQ==
   dependencies:
     "@medusajs/medusa-js" "*"
 
@@ -10395,6 +10397,11 @@ prism-react-renderer@^2.0.4, prism-react-renderer@^2.0.6:
     "@types/prismjs" "^1.26.0"
     clsx "^2.0.0"
 
+prismjs@^1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -11462,6 +11469,11 @@ sockjs@^0.3.24:
     uuid "^8.3.2"
     websocket-driver "^0.7.4"
 
+sonner@^1.4.41:
+  version "1.4.41"
+  resolved "https://registry.yarnpkg.com/sonner/-/sonner-1.4.41.tgz#ff085ae4f4244713daf294959beaa3e90f842d2c"
+  integrity sha512-uG511ggnnsw6gcn/X+YKkWPo5ep9il9wYi3QJxHsYe7yTZ4+cOd1wuodOUmOpFuXL+/RE3R04LczdNCDygTDgQ==
+
 sorted-array-functions@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/sorted-array-functions/-/sorted-array-functions-1.3.0.tgz#8605695563294dffb2c9796d602bd8459f7a0dd5"
@@ -11603,7 +11615,7 @@ string-length@^4.0.1:
     char-regex "^1.0.2"
     strip-ansi "^6.0.0"
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.2, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -11620,6 +11632,15 @@ string-width@^3.0.0:
     emoji-regex "^7.0.1"
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^5.1.0"
+
+string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.2, string-width@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
 
 string-width@^5.0.1, string-width@^5.1.2:
   version "5.1.2"
@@ -11644,7 +11665,7 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -11657,6 +11678,13 @@ strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
   dependencies:
     ansi-regex "^4.1.0"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
 
 strip-ansi@^7.0.1:
   version "7.1.0"
@@ -12558,7 +12586,7 @@ word-wrap@~1.2.3:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.5.tgz#d2c45c6dd4fbce621a66f136cbe328afd0410b34"
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
@@ -12571,6 +12599,15 @@ wrap-ansi@^6.0.1, wrap-ansi@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
   integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   dependencies:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
